@@ -25,26 +25,32 @@ const data = {
     {
       id: 0,
       navItemType: "Link",
-      href: "#!",
-      text: "Products",
+      href: "/over-dietist-eline-zuiderwijk/",
+      text: "Over Eline Zuiderwijk",
     },
     {
       id: 1,
       navItemType: "Link",
-      href: "#!",
-      text: "Pricing",
+      href: "/fodmap-dieet/",
+      text: "FODMAP dieet",
     },
     {
       id: 2,
       navItemType: "Link",
-      href: "#!",
-      text: "About",
+      href: "afvallen-en-aankomen",
+      text: "Afvallen en aankomen",
     },
     {
       id: 3,
       navItemType: "Link",
-      href: "#!",
-      text: "Blog",
+      href: "/praktijklocaties/",
+      text: "Praktijklocaties",
+    },
+    {
+      id: 4,
+      navItemType: "Link",
+      href: "/contact/",
+      text: "Contact",
     },
   ],
   cta: {
@@ -84,7 +90,7 @@ export default function Header() {
                 ))}
             </FlexList>
           </nav>
-          <div>{cta && <Button to={cta.href}>{cta.text}</Button>}</div>
+          {/* <div>{cta && <Button to={cta.href}>{cta.text}</Button>}</div> */}
         </Flex>
       </Container>
       <Container className={mobileHeaderNavWrapper[isOpen ? "open" : "closed"]}>
@@ -102,13 +108,13 @@ export default function Header() {
           </span>
           <Flex>
             <Space />
-            <div>
+            {/* <div>
               {cta && (
                 <Button to={cta.href} variant={isOpen ? "reversed" : "primary"}>
                   {cta.text}
                 </Button>
               )}
-            </div>
+            </div> */}
             <Nudge right={3}>
               <InteractiveIcon
                 title="Toggle menu"

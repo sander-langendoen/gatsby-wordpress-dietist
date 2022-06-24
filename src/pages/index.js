@@ -5,16 +5,19 @@ import * as sections from "../components/sections"
 import Fallback from "../components/fallback"
 
 export default function Homepage(props) {
-  const { homepage } = props.data
+  // const { homepage } = props.data
 
   return (
-    <Layout {...homepage}>
-      {homepage.blocks.map((block) => {
-        const { id, blocktype, ...componentProps } = block
-        const Component = sections[blocktype] || Fallback
-        return <Component key={id} {...componentProps} />
-      })}
+    <Layout>
+       {/* 'BOEM' */}
     </Layout>
+    // <Layout {...homepage}>
+    //   {homepage.blocks.map((block) => {
+    //     const { id, blocktype, ...componentProps } = block
+    //     const Component = sections[blocktype] || Fallback
+    //     return <Component key={id} {...componentProps} />
+    //   })}
+    // </Layout>
   )
 }
 

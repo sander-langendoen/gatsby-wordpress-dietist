@@ -321,15 +321,15 @@ exports.onCreateNode = ({
       case "homepage":
         // prettier-ignore
         const {
-          description,
-          hero,
-          logoList,
-          featureList,
-          productList,
-          benefitList,
-          statList,
-          testimonialList,
-          cta,
+          // description,
+          // hero,
+          // logoList,
+          // featureList,
+          // productList,
+          // benefitList,
+          // statList,
+          // testimonialList,
+          // cta,
         } = node.homepage
 
         const content = {
@@ -503,14 +503,14 @@ exports.onCreateNode = ({
           description,
           image: node.featuredImage?.node?.id,
           content: [
-            blocks.hero.id,
-            blocks.logoList.id,
-            blocks.productList.id,
-            blocks.featureList.id,
-            blocks.benefitList.id,
-            blocks.statList.id,
-            blocks.testimonialList.id,
-            blocks.cta.id,
+            // blocks.hero.id,
+            // blocks.logoList.id,
+            // blocks.productList.id,
+            // blocks.featureList.id,
+            // blocks.benefitList.id,
+            // blocks.statList.id,
+            // blocks.testimonialList.id,
+            // blocks.cta.id,
           ],
         })
 

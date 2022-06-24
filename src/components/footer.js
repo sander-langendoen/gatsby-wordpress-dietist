@@ -21,18 +21,13 @@ import {
 import BrandLogo from "./brand-logo"
 
 const socialMedia = {
-  TWITTER: {
-    url: "https://twitter.com",
-    name: "Twitter",
-    icon: <Twitter />,
-  },
   INSTAGRAM: {
-    url: "https://instagram.com",
+    url: "http://instagram.com/eline_goedeten/",
     name: "Instagram",
     icon: <Instagram />,
   },
   FACEBOOK: {
-    url: "https://facebook.com",
+    url: "https://www.facebook.com/dietistelinezuiderwijk/",
     name: "Facebook",
     icon: <Facebook />,
   },
@@ -40,16 +35,6 @@ const socialMedia = {
     url: "https://youtube.com",
     name: "YouTube",
     icon: <Youtube />,
-  },
-  GITHUB: {
-    url: "https://github.com",
-    name: "GitHub",
-    icon: <GitHub />,
-  },
-  TWITCH: {
-    url: "https://twitch.tv",
-    name: "Twitch",
-    icon: <Twitch />,
   },
 }
 
@@ -71,23 +56,27 @@ const data = {
   links: [
     {
       id: 0,
-      href: "#!",
-      text: "Products",
+      navItemType: "Link",
+      href: "/over-dietist-eline-zuiderwijk/",
+      text: "Over Eline Zuiderwijk",
     },
     {
       id: 1,
-      href: "#!",
-      text: "Pricing",
+      navItemType: "Link",
+      href: "/fodmap-dieet/",
+      text: "FODMAP dieet",
     },
     {
       id: 2,
-      href: "#!",
-      text: "About",
+      navItemType: "Link",
+      href: "afvallen-en-aankomen",
+      text: "Afvallen en aankomen",
     },
     {
       id: 3,
-      href: "#!",
-      text: "Blog",
+      navItemType: "Link",
+      href: "/contact/",
+      text: "Contact",
     },
   ],
   meta: [
@@ -104,31 +93,15 @@ const data = {
   ],
   socialLinks: [
     {
-      service: "TWITTER",
-      username: "gatsbyjs",
-    },
-    {
       service: "INSTAGRAM",
-      username: "gatsbyjs",
-    },
-    {
-      service: "GITHUB",
       username: "gatsbyjs",
     },
     {
       service: "FACEBOOK",
       username: "gatsbyjs",
     },
-    {
-      service: "YOUTUBE",
-      username: "gatsbyjs",
-    },
-    {
-      service: "TWITCH",
-      username: "gatsbyjs",
-    },
   ],
-  copyright: "© 2022 Gatsby Inc. All rights reserved",
+  copyright: "© 2022 Eline Zuiderwijk. All rights reserved",
 }
 
 export default function Footer(props) {
@@ -140,7 +113,6 @@ export default function Footer(props) {
         <Flex variant="start" responsive>
           <NavLink to="/">
             <VisuallyHidden>Home</VisuallyHidden>
-            <BrandLogo />
           </NavLink>
           <Space />
           <FlexList>

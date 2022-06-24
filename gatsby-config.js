@@ -6,16 +6,21 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://gatsbywordpresshomepage.gatsbyjs.io/",
-    title: "Gatsby WordPress Homepage Starter",
-    author: `Gatsby`,
-    description: "A Gatsby Starter for building homepages with WordPress",
+    siteUrl: "https://gatsbywordpressdietist.gatsbyjs.io",
+    title: "Gatsby WordPress Dietist",
+    author: `Sander Langendoen`,
+    description: "",
   },
   plugins: [
     {
       resolve: "gatsby-source-wordpress",
       options: {
         url: process.env.WPGRAPHQL_URL,
+        schema: {
+          requestConcurrency: 5, // currently set to 5
+          previewRequestConcurrency: 2, // currently set to 2
+          perPage: 25,
+        }
       },
     },
     "gatsby-plugin-sharp",
@@ -26,7 +31,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Gatsby Starter WordPress Homepage",
+        name: "Gatsby WordPress Dietist",
         short_name: "Gatsby",
         start_url: "/",
         // These can be imported once ESM support lands
