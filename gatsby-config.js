@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: process.env.WPGRAPHQL_URL,
+        url: "https://dietist-elinezuiderwijk.nl/graphql",
         schema: {
           requestConcurrency: 5, // currently set to 5
           previewRequestConcurrency: 2, // currently set to 2

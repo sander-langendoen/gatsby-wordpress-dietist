@@ -1,11 +1,8 @@
 import * as React from "react"
 import {
-  Twitter,
-  Twitch,
   Instagram,
   Facebook,
   Youtube,
-  GitHub,
 } from "react-feather"
 import {
   Container,
@@ -18,7 +15,6 @@ import {
   IconLink,
   VisuallyHidden,
 } from "./ui"
-import BrandLogo from "./brand-logo"
 
 const socialMedia = {
   INSTAGRAM: {
@@ -93,10 +89,12 @@ const data = {
   ],
   socialLinks: [
     {
+      id: 0,
       service: "INSTAGRAM",
       username: "gatsbyjs",
     },
     {
+      id: 1,
       service: "FACEBOOK",
       username: "gatsbyjs",
     },
